@@ -5,5 +5,5 @@ module.exports = {
     ryca: require("./ryca"),
     stalker: require("./stalker"),
     uf: require("./uf"),
-    notFound: require("./404")
+    notFound: require("./404"),
 }

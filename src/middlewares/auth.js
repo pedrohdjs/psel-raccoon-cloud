@@ -13,9 +13,7 @@ module.exports = function (req, res, next) {
     }
 
     if (passedKey !== process.env.ACCESS_KEY) {
-        return res
-            .status(401)
-            .send({ error: "Chave de acesso inválida" })
+        return res.status(401).send({ error: "Chave de acesso inválida" })
     }
 
     return next()
